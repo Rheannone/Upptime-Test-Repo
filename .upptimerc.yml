@@ -22,8 +22,7 @@ sites:
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+  themeUrl: https://rheannone.github.io/Upptime-Test-Repo/custom-theme.css
   baseUrl: /Upptime-Test-Repo
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
