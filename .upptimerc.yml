@@ -11,14 +11,6 @@ sites:
     url: https://news.ycombinator.com
   - name: Test Broken Site
     url: https://thissitedoesnotexist.koj.co
-  - name: Blocks - Name and URL with full wss address
-    url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
-    method: GET
-    expectedStatusCodes:
-      - 101
-      - 200
-  - name: Blocks - Name and URL with full wss address No Status Code
-    url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
   - name: Blocks - check(tcp-ping) with expected status code
     check: "tcp-ping"
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
