@@ -22,7 +22,7 @@ sites:
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
 
 status-website:
-  themeUrl: https://rheannone.github.io/Upptime-Test-Repo/custom-theme.css
+  themeUrl: https://rheannone.github.io/custom-theme.css
   baseUrl: /Upptime-Test-Repo
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
