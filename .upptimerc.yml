@@ -1,6 +1,6 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: Rheannone # Your GitHub organization or username, where this repository lives
+repo: Upptime-Test-Repo # The name of this repository
 
 sites:
   - name: Google
@@ -16,11 +16,15 @@ sites:
     method: GET
     expectedStatusCodes:
       - 101
+      - 200
+  - name: Blocks - Name and URL with full wss address No Status Code
+    url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
   - name: Blocks - check(tcp-ping) with expected status code
     check: "tcp-ping"
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
     expectedStatusCodes:
       - 101
+      - 200
   - name: Blocks - check(tcp-ping) w/0 expected status code
     check: "tcp-ping"
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
