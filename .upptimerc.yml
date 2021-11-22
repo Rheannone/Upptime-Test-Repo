@@ -16,6 +16,14 @@ sites:
     method: GET
     expectedStatusCodes:
       - 101
+  - name: Blocks - check(tcp-ping) with expected status code
+    check: "tcp-ping"
+    url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
+    expectedStatusCodes:
+      - 101
+  - name: Blocks - check(tcp-ping) w/0 expected status code
+    check: "tcp-ping"
+    url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
