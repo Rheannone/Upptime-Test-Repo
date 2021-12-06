@@ -16,13 +16,14 @@ sites:
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
     expectedStatusCodes:
       - 101
-      - 200
   - name: Blocks - check(tcp-ping) w/0 expected status code
     check: "tcp-ping"
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
 
 status-website:
-  themeUrl: https://rheannone.github.io/custom-theme.css
+  links:
+    - rel: stylesheet
+      href: https://rheannone.github.io/CSS/css/gl-status-custom.css
   baseUrl: /Upptime-Test-Repo
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
