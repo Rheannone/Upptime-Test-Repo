@@ -19,6 +19,9 @@ sites:
   - name: Blocks - check(tcp-ping) w/0 expected status code
     check: "tcp-ping"
     url: wss://explorer.icon.geometry-dev.net/ws/v1/blocks
+  - name: Blocks on Community - check(wss) w/0 expected status code
+    check: "wss"
+    url: wss://tracker.icon.community/ws/v1/blocks
 
 status-website:
   links:
